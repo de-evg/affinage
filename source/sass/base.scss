@@ -1,18 +1,21 @@
 html {
   min-width: $smallDeviceWidth;
-  height: auto;
 }
 
 body {
-  background-color: $pageBgc;
   margin: 0;
   padding: 0;
-  height:100vh;
-  overflow-y:none;
+}
+header {
+  background-color: $pageBgc;
+  display: block;
+  z-index: -3;
 }
 
 main {
+  background-color: $pageBgc;
   display: block;
+  z-index: -3;
 }
 
 a {
@@ -27,6 +30,13 @@ img {
 
 .reset-margin {
   margin: 0;
+}
+
+.page-wrapper {
+  position: relative;
+  width: $smallDeviceWidth;
+  margin: 0 auto;
+  overflow-y: hidden;
 }
 
 @media (min-width: $largeDeviceWidth) {

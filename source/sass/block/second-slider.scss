@@ -1,9 +1,9 @@
 .second-slider {
-  width: 320px;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
-  z-index: -1;
+  overflow: hidden;
   &::before {
     position: absolute;
     content: "";
@@ -59,4 +59,28 @@
 
 .second-slider__right-button {
   background-image: url('../img/arrow-right.svg');
+}
+
+.second-slider__number--mobile-hidden {
+  display: none;
+}
+
+.second-slider__number {
+  position: absolute;
+  bottom: 19px;
+  right: 19px;
+  font-family: "Geometria", "Arial", sans-serif;
+  font-size: 20px;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 148px;
+    height: 148px;
+    background-color: $pageBgc;
+    top: -32px;
+    left: -32px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
 }

@@ -1,15 +1,15 @@
 .page-main {
-  position: relative;
-  margin-top: -145px;
   display: flex;
   flex-direction: column;
-  padding-top: 44px;
+  width: 320px;
+  margin: 0 auto;
   overflow-x: hidden;
 }
 
 .page-main__slogan {
-  left: -20px;
-  top: 39%;
+  position: absolute;
+  left: -19px;
+  top: 43%;
   transform: translateY(-50%) rotate(-90deg);
 }
 
@@ -17,28 +17,4 @@
   font-family: "Philosopher", "Georgia", serif;
   font-size: 140px;
   display: none;
-}
-
-.page-main__number--mobile-hidden {
-  display: none;
-}
-
-.page-main__number {
-  position: absolute;
-  bottom: 19px;
-  right: 19px;
-  font-family: "Geometria", "Arial", sans-serif;
-  font-size: 20px;
-  z-index: 1;
-  &::before {
-    position: absolute;
-    content: "";
-    width: 148px;
-    height: 148px;
-    background-color: $pageBgc;
-    top: -32px;
-    left: -32px;
-    transform: rotate(45deg);
-    z-index: -1;
-  }
 }
