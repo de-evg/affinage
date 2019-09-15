@@ -31,3 +31,35 @@
   opacity: 0.2;
 }
 
+@media (min-width: $largeDeviceWidth) {
+  .first-slider {
+    margin-top: -37px;
+    margin-left: 60px;
+    position: relative;
+    width: 800px;
+    height: 525px;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 800px;
+      height: 525px;
+      background-color: $pageBgc;
+      top: 0;
+      left: 0;
+    }
+
+    .first-slider__img {
+      position: relative;
+      vertical-align: top;
+      left: 0;
+      max-width: 800px;
+      width: 800px;
+      height: 525px;
+      min-height: auto;
+
+  }
+}
+}
+
+

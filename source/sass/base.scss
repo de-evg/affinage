@@ -43,4 +43,16 @@ img {
   html {
     min-width: $largeDeviceWidth;
   }
+
+  header, main {
+    background-color: transparent;
+    z-index: 0;
+  }
+
+  .page-wrapper {
+    width: $largeDeviceWidth;
+    min-height: 800px;
+    background-color: #FEFEFE;
+    z-index: -1;
+  }
 }

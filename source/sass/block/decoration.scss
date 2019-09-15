@@ -41,3 +41,137 @@
   top: 196px;
   right: 27px;
 }
+
+@media (min-width: $largeDeviceWidth) {
+  .decoration__symbol svg {
+    height: 165px;
+  }
+
+  .decoration__symbol:nth-child(1) {
+    top: 0;
+    left: 960px;
+  }
+
+  .decoration__symbol:nth-child(2) {
+    top: 82px;
+    left: 1134px;
+    z-index: -1;
+  }
+
+  .decoration__symbol:nth-child(3) {
+    top: 160px;
+    left: 1047px;
+    z-index: 0;
+  }
+
+  .decoration__symbol:nth-child(4) {
+    top: 74%;
+    left: 50%;
+    width: 163px;
+    height: 113px;
+    background-size: cover;
+    z-index: 0;
+    &::before {
+      position: absolute;
+      content: "N";
+      font-family: "Philosopher", "Georgia", serif;
+      font-weight: bold;
+      font-size: 25px;
+      bottom: -86px;
+      right: 263px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 213px;
+      height: 10px;
+      bottom: -10px;
+      left: -26px;
+      background-color: $pageBgc;
+    }
+  }
+
+  .decoration__symbol:nth-child(5) {
+    bottom: -80px;
+    left: 430px;
+    &::before {
+      position: absolute;
+      content: "F";
+      font-family: "Philosopher", "Georgia", serif;
+      font-weight: bold;
+      font-size: 25px;
+      bottom: 100px;
+      right: 65px;
+    }
+    &::after {
+      position: absolute;
+      content: "I";
+      font-family: "Philosopher", "Georgia", serif;
+      font-weight: bold;
+      font-size: 25px;
+      bottom: 130px;
+      right: 12px;
+    }
+  }
+
+   .decoration__symbol:nth-child(6) {
+    top: 622px;
+    right: 1204px;
+    &::before {
+      position: absolute;
+      content: "A";
+      font-family: "Philosopher", "Georgia", serif;
+      font-weight: bold;
+      font-size: 25px;
+      bottom: 22px;
+      right: -67px;
+    }
+    &::after {
+      position: absolute;
+      content: "F";
+      font-family: "Philosopher", "Georgia", serif;
+      font-weight: bold;
+      font-size: 25px;
+      bottom: 57px;
+      right: -130px;
+    }
+  }
+
+  .decoration__symbol:nth-child(7) {
+    top: 664px;
+    left: 1179px;
+    &::before {
+      position: absolute;
+      content: "E";
+      font-family: "Philosopher", "Georgia", serif;
+      font-weight: bold;
+      font-size: 25px;
+      bottom: 51px;
+      right: 65px;
+    }
+    &::after {
+      position: absolute;
+      content: "A";
+      font-family: "Philosopher", "Georgia", serif;
+      font-weight: bold;
+      font-size: 25px;
+      bottom: 85px;
+      right: 277px;
+    }
+  }
+
+   .decoration__symbol:nth-child(8) {
+    top: 683px;
+    left: 945px;
+    &::before {
+      position: absolute;
+      content: "G";
+      text-shadow: rgba(0, 0, 0, 0.16) -2px 2px;
+      font-family: "Philosopher", "Georgia", serif;
+      font-weight: bold;
+      font-size: 25px;
+      bottom: 96px;
+      right: -60px;
+    }
+  }
+}

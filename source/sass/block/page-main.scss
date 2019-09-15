@@ -1,7 +1,7 @@
 .page-main {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: $smallDeviceWidth;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -16,5 +16,14 @@
 .page-main__title {
   font-family: "Philosopher", "Georgia", serif;
   font-size: 140px;
+}
+
+.page-main__title--mobile-hidden {
   display: none;
+}
+
+@media (min-width: $largeDeviceWidth) {
+  .page-main {
+    width: $largeDeviceWidth;
+  }
 }

@@ -7,7 +7,7 @@
   &::before {
     position: absolute;
     content: "";
-    width: 320px;
+    width: $smallDeviceWidth;
     height: 318px;
     background-color: $pageBgc;
     top: 0;
@@ -82,5 +82,75 @@
     left: -32px;
     transform: rotate(45deg);
     z-index: -1;
+  }
+}
+
+@media (min-width: $largeDeviceWidth) {
+  .second-slider {
+    top: 184px;
+    left: 479px;
+    position: absolute;
+    width: 860px;
+    height: 490px;
+    &::before {
+      width: 860px;
+      height: 490px;
+    }
+  }
+
+  .second-slider__container {
+    width: 860px;
+    height: 490px;
+  }
+
+  .second-slider__img {
+    width: 860px;
+    max-width: 860px;
+    height: 490px;
+    left: 0;
+  }
+
+  .second-slider__number {
+    position: absolute;
+    bottom: 68px;
+    right: 248px;
+    font-family: "Geometria", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    letter-spacing: 2px;
+    z-index: 1;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 138px;
+      height: 383px;
+      background-color: $pageBgc;
+      top: -300px;
+      left: -23px;
+      transform: rotate(0);
+      z-index: -1;
+    }
+  }
+
+  .second-slider__number span {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 17px;
+      height: 3px;
+      background-color: #000000;
+      top: -8px;
+      left: 2px;
+    }
+  }
+
+  .second-slider__control {
+    top: 318px;
+    right: 137px;
+    width: 257px;
   }
 }
