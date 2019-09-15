@@ -1,0 +1,10 @@
+.burger {
+  width: 20px;
+  height: 14px;
+  margin-top: 4px;
+  background-color: transparent;
+  border: none;
+  background: linear-gradient(to bottom, #000000 0%, #000000 2px,
+    transparent 2px, transparent 6px, #000000 6px, #000000 8px,
+    transparent 8px, transparent 12px, #000000 12px, #000000 100%);
+}

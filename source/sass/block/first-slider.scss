@@ -1,0 +1,33 @@
+.first-slider {
+  position: relative;
+  width: 236px;
+  height: 167px;
+  z-index: -2;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 236px;
+    height: 167px;
+    background-color: $pageBgc;
+    top: 0;
+    right: 0;
+  }
+}
+
+.first-slider__container {
+  overflow: hidden;
+}
+
+.first-slider__img:nth-child(2),
+.first-slider__img:nth-child(3) {
+  display: none;
+}
+
+.first-slider__img {
+  position: relative;
+  left: -44px;
+  max-width: 280px;
+  min-height: auto;
+  opacity: 0.2;
+}
+

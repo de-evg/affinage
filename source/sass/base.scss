@@ -1,0 +1,36 @@
+html {
+  min-width: $smallDeviceWidth;
+  height: auto;
+}
+
+body {
+  background-color: $pageBgc;
+  margin: 0;
+  padding: 0;
+  height:100vh;
+  overflow-y:none;
+}
+
+main {
+  display: block;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.reset-margin {
+  margin: 0;
+}
+
+@media (min-width: $largeDeviceWidth) {
+  html {
+    min-width: $largeDeviceWidth;
+  }
+}

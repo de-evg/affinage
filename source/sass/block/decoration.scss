@@ -1,0 +1,43 @@
+.decoration__symbol svg {
+  height: 83px;
+}
+
+.decoration__symbol {
+  position: absolute;
+}
+
+.decoration__symbol:nth-child(1) {
+  top: 176px;
+  left: 63px;
+}
+
+.decoration__symbol:nth-child(2) {
+  top: 82px;
+  left: 212px;
+}
+
+.decoration__symbol:nth-child(3) {
+  top: 162px;
+  left: 142px;
+  z-index: -1;
+}
+
+.decoration__symbol:nth-child(4) {
+  width: 109px;
+  height: 55px;
+  background-image: url("../img/wreath.png");
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.decoration__symbol:nth-child(5) {
+  bottom: -5px;
+  left: 45px;
+}
+
+.decoration__symbol:nth-child(6) {
+  top: 158px;
+  right: 27px;
+}

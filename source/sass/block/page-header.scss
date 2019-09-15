@@ -1,0 +1,21 @@
+.page-header {
+  margin: 0 auto;
+  width: 320px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__decoration {
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-left: 115px;
+  background-image: url("../img/line.png");
+  background-position: 0 -1px;
+  width: 154px;
+  min-height: 183px;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+
