@@ -4,19 +4,22 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  &::before {
-    position: absolute;
-    content: "";
-    width: $smallDeviceWidth;
-    height: 318px;
-    background-color: $pageBgc;
-    top: 0;
-    right: 0;
-  }
+}
+
+.second-slider__title--mobile-hidden {
+  display: none;
+}
+
+.second-slider__svg-decoraion--modile-hidden {
+  display: none;
 }
 
 .second-slider__container {
   overflow: hidden;
+  width: $smallDeviceWidth;
+  height: 318px;
+  background-color: $pageBgc;
+  opacity: 0.4;
 }
 
 .second-slider__img:nth-child(2),
@@ -29,7 +32,6 @@
   max-width: 558px;
   left: -120px;
   height: 318px;
-  opacity: 0.4;
   vertical-align: middle;
 }
 
@@ -92,15 +94,49 @@
     position: absolute;
     width: 860px;
     height: 490px;
+  }
+
+  .second-slider__title {
+    position: absolute;
+    display: block;
+    width: 47px;
+    margin: 0;
+    font-family: "Geometria", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 1);
+    top: 61px;
+    left: 114px;
+    z-index: 2;
     &::before {
-      width: 860px;
-      height: 490px;
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 100px;
+      border: 1px solid #000000;
+      border-radius: 50%;
+      top: -30px;
+      left: 50%;
+      transform: translate(-50%);
     }
   }
 
   .second-slider__container {
+    position: relative;
     width: 860px;
     height: 490px;
+    opacity: 1;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 860px;
+      height: 490px;
+      background-color: $pageBgc;
+      opacity: 0.8;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
   }
 
   .second-slider__img {
@@ -108,6 +144,7 @@
     max-width: 860px;
     height: 490px;
     left: 0;
+    opacity: 0.5;
   }
 
   .second-slider__number {
@@ -118,7 +155,7 @@
     font-weight: 500;
     font-size: 45px;
     letter-spacing: 2px;
-    z-index: 1;
+    z-index: 2;
     &::before {
       position: absolute;
       content: "";
@@ -152,5 +189,16 @@
     top: 318px;
     right: 137px;
     width: 257px;
+    z-index: 1;
+  }
+
+  .second-slider__svg-decoraion {
+    position: absolute;
+    display: block;
+    top: 266px;
+    left: 330px;
+    width: 177px;
+    height: 282px;
+    z-index: 2;
   }
 }

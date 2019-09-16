@@ -32,13 +32,6 @@ img {
   margin: 0;
 }
 
-.page-wrapper {
-  position: relative;
-  width: $smallDeviceWidth;
-  margin: 0 auto;
-  overflow-y: hidden;
-}
-
 @media (min-width: $largeDeviceWidth) {
   html {
     min-width: $largeDeviceWidth;
@@ -49,10 +42,5 @@ img {
     z-index: 0;
   }
 
-  .page-wrapper {
-    width: $largeDeviceWidth;
-    min-height: 800px;
-    background-color: #FEFEFE;
-    z-index: -1;
-  }
+
 }

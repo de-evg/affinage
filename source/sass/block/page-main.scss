@@ -13,17 +13,13 @@
   transform: translateY(-50%) rotate(-90deg);
 }
 
-.page-main__title {
-  font-family: "Philosopher", "Georgia", serif;
-  font-size: 140px;
-}
-
-.page-main__title--mobile-hidden {
-  display: none;
-}
-
 @media (min-width: $largeDeviceWidth) {
   .page-main {
     width: $largeDeviceWidth;
+  }
+
+  .page-main__slogan {
+    left: 260px;
+    top: 61%;
   }
 }

@@ -51,6 +51,21 @@
     width: $largeDeviceWidth;
   }
 
+  .page-header__logo {
+    position: absolute;
+    display: block;
+
+    font-family: "Philosopher", "Georgia", serif;
+    font-size: 120px;
+    font-weight: 400;
+    letter-spacing: 100px;
+    color: #ffffff;
+
+    text-transform: uppercase;
+
+    z-index: 3;
+  }
+
   .page-header__container {
     margin: 0;
     padding-top: 34px;

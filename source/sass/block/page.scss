@@ -1,7 +1,80 @@
-.page__decoration {
-  box-sizing: border-box;
-  background-image: url("../img/line.png");
-  background-position: 300px -1px;
-  background-repeat: no-repeat;
-  z-index: -2;
+
+.page__wrapper {
+  position: relative;
+  width: $smallDeviceWidth;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+
+.page__title {
+  font-family: "Geometria", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.page__title--mobile-hidden {
+  display: none;
+}
+
+.page__logo--mobile-hidden {
+  display: none;
+}
+
+@media (min-width: $largeDeviceWidth) {
+.page__wrapper {
+    width: $largeDeviceWidth;
+    min-height: 800px;
+    background: linear-gradient(to right, #fefefe 0%, #fefefe 50%, #ffffff 50%, #ffffff 100%);
+    z-index: -1;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 600px;
+      height: 616px;
+      bottom: 0;
+      left: 120px;
+      background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+      opacity: 0.6;
+      box-shadow: 0 0 99px rgba(0, 0, 0, 0.1);
+      z-index: -2;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+      background: #ffffff;
+      box-shadow: 0 0 99px rgba(0, 0, 0, 0.1);
+      z-index: -2;
+    }
+  }
+
+  .page__title {
+    display: block;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 395px;
+    left: -47px;
+  }
+
+  .page__logo {
+    position: absolute;
+    display: block;
+
+    top: 210px;
+    left: 200px;
+
+    font-family: "Philosopher", "Georgia", serif;
+    font-size: 120px;
+    font-weight: 400;
+    letter-spacing: 55px;
+    color: #ffffff;
+
+    text-transform: uppercase;
+
+    z-index: 3;
+  }
 }

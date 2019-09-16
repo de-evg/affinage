@@ -7,3 +7,20 @@
     transparent 2px, transparent 6px, #000000 6px, #000000 8px,
     transparent 8px, transparent 12px, #000000 12px, #000000 100%);
 }
+
+@media (min-width: $largeDeviceWidth) {
+  .burger {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 54px;
+      height: 54px;
+      background-image: url("../img/wreath-gray.png");
+      background-repeat: no-repeat;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
