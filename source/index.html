@@ -52,9 +52,9 @@
         <p class="first-slider__number first-slider__number--mobile-hidden">51
         </p>
         <div class="first-slider__container">
-          <img class="first-slider__img" src="img/Arc.jpg" width="280" height="184" alt="">
-          <img class="first-slider__img" src="img/Modern.jpg" width="280" height="184" alt="">
-          <img class="first-slider__img" src="img/moto.jpg" width="280" height="184" alt="">
+          <img class="first-slider__img first-slider__img--current" src="img/Arc.jpg" width="280" height="184" alt="">
+          <img class="first-slider__img first-slider__img--right" src="img/moto.jpg" width="280" height="184" alt="">
+          <img class="first-slider__img first-slider__img--left" src="img/Modern.jpg" width="280" height="184" alt="">
         </div>
       </div>
     </header>
@@ -66,13 +66,13 @@
       <div class="second-slider">
         <h2 class="second-slider__title second-slider__title--mobile-hidden">URAL 03</h2>
         <div class="second-slider__container">
-          <img class="second-slider__img" src="img/moto.jpg" width="558" height="318" alt="">
-          <img class="second-slider__img" src="img/Modern.jpg" width="558" height="318" alt="">
-          <img class="second-slider__img" src="img/Arc.jpg" width="558" height="318" alt="">
+          <img class="second-slider__img second-slider__img--current" src="img/moto.jpg" width="558" height="318" alt="">
+          <img class="second-slider__img second-slider__img--right" src="img/Modern.jpg" width="558" height="318" alt="">
+          <img class="second-slider__img second-slider__img--left" src="img/Arc.jpg" width="558" height="318" alt="">
         </div>
         <div class="second-slider__control">
-          <button class="second-slider__left-button"></button>
-          <button class="second-slider__right-button"></button>
+          <button class="second-slider__left-button" id="leftBtn"></button>
+          <button class="second-slider__right-button" id="rightBtn"></button>
         </div>
         <p class="second-slider__number reset-margin">13<span class="second-slider__number--mobile-hidden">7</span></p>
       </div>
@@ -108,5 +108,7 @@
       </div>
     </main>
   </div>
+  <script src="js/secondSlider.js"></script>
+  <script src="js/firstSlider.js"></script>
 </body>
 </html>
