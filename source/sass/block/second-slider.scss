@@ -69,18 +69,21 @@
 
 .second-slider__number {
   position: absolute;
-  bottom: 19px;
-  right: 19px;
+  bottom: 22px;
+  right: 20px;
   font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 900;
   font-size: 20px;
+  font-style: italic;
+  letter-spacing: 1px;
   z-index: 1;
   &::before {
     position: absolute;
     content: "";
-    width: 148px;
-    height: 148px;
+    width: 150px;
+    height: 150px;
     background-color: $pageBgc;
-    top: -32px;
+    top: -29px;
     left: -32px;
     transform: rotate(45deg);
     z-index: -1;
@@ -104,6 +107,7 @@
     font-family: "Geometria", "Arial", sans-serif;
     font-weight: 400;
     font-size: 17px;
+    line-height: 21px;
     color: rgba(255, 255, 255, 1);
     top: 61px;
     left: 114px;
@@ -149,18 +153,19 @@
 
   .second-slider__number {
     position: absolute;
-    bottom: 68px;
-    right: 248px;
+    bottom: 70px;
+    right: 253px;
     font-family: "Geometria", "Arial", sans-serif;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 45px;
+    font-style: italic;
     letter-spacing: 2px;
     z-index: 2;
     &::before {
       position: absolute;
       content: "";
       width: 138px;
-      height: 383px;
+      height: 386px;
       background-color: $pageBgc;
       top: -300px;
       left: -23px;
@@ -174,14 +179,15 @@
     position: relative;
     display: inline-block;
     bottom: -20px;
+    left: 2px;
     &::before {
       position: absolute;
       content: "";
       width: 17px;
       height: 3px;
       background-color: #000000;
-      top: -8px;
-      left: 2px;
+      top: -7px;
+      left: 5px;
     }
   }
 

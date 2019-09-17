@@ -39,20 +39,23 @@
   }
 
   .first-slider__number {
+    margin: 0;
     display: block;
     position: absolute;
     font-family: "Geometria", "Arial", sans-serif;
     font-size: 28px;
     font-weight: 900;
-    top: 4px;
-    right: 286px;
+    top: 33px;
+    right: 291px;
     transform: rotate(-90deg);
+    color: rgba(0, 0, 0, 0.5);
     &::before {
       position: absolute;
       content: "(1)";
       font-family: "Geometria", "Aria", sans-serif;
       font-size: 14px;
       font-weight: 300;
+      color: rgba(0, 0, 0, 1);
       transform: rotate(90deg);
       top: -335px;
       left: -34px;
@@ -63,9 +66,10 @@
       font-family: "Geometria", "Aria", sans-serif;
       font-size: 14px;
       font-weight: 300;
+      color: rgba(0, 0, 0, 1);
       transform: rotate(90deg);
       top: -335px;
-      left: -114px;
+      left: -117px;
     }
   }
 

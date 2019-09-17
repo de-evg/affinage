@@ -1,5 +1,5 @@
 .decoration__symbol svg {
-  height: 83px;
+  height: 85px;
 }
 
 .decoration__symbol {
@@ -7,18 +7,27 @@
 }
 
 .decoration__symbol:nth-child(1) {
-  top: 214px;
-  left: 63px;
+  background: url("../img/A.png") no-repeat;
+  width: 46px;
+  height: 75px;
+  top: 220px;
+  left: 70px;
 }
 
 .decoration__symbol:nth-child(2) {
-  top: 120px;
-  left: 212px;
+  background: url("../img/E.png") no-repeat;
+  width: 38px;
+  height: 75px;
+  top: 125px;
+  left: 217px;
 }
 
 .decoration__symbol:nth-child(3) {
-  top: 198px;
-  left: 142px;
+  background: url("../img/G.png") no-repeat;
+  width: 46px;
+  height: 75px;
+  top: 205px;
+  left: 147px;
   z-index: -1;
 }
 
@@ -44,23 +53,32 @@
 
 @media (min-width: $largeDeviceWidth) {
   .decoration__symbol svg {
-    height: 165px;
+    height: 30px;
   }
 
   .decoration__symbol:nth-child(1) {
-    top: 0;
+    background: url("../img/A_large.png") no-repeat;
+    width: 61px;
+    height: 101px;
+    top: 35px;
     left: 960px;
   }
 
   .decoration__symbol:nth-child(2) {
-    top: 82px;
+    background: url("../img/E_large.png") no-repeat;
+    width: 51px;
+    height: 101px;
+    top: 117px;
     left: 1134px;
     z-index: -1;
   }
 
   .decoration__symbol:nth-child(3) {
-    top: 160px;
-    left: 1047px;
+    background: url("../img/G_large.png") no-repeat;
+    width: 62px;
+    height: 101px;
+    top: 195px;
+    left: 1045px;
     z-index: 1;
   }
 
@@ -92,7 +110,7 @@
   }
 
   .decoration__symbol:nth-child(5) {
-    bottom: -80px;
+    bottom: -13px;
     left: 430px;
     &::before {
       position: absolute;
@@ -100,7 +118,7 @@
       font-family: Philosopher, Georgia, serif;
       font-weight: bold;
       font-size: 25px;
-      bottom: 100px;
+      bottom: 34px;
       right: 65px;
     }
     &::after {
@@ -109,13 +127,13 @@
       font-family: Philosopher, Georgia, serif;
       font-weight: bold;
       font-size: 25px;
-      bottom: 130px;
+      bottom: 60px;
       right: 12px;
     }
   }
 
    .decoration__symbol:nth-child(6) {
-    top: 622px;
+    top: 689px;
     right: 1204px;
     &::before {
       position: absolute;
@@ -123,7 +141,7 @@
       font-family: Philosopher, Georgia, serif;
       font-weight: bold;
       font-size: 25px;
-      bottom: 22px;
+      bottom: -48px;
       right: -67px;
     }
     &::after {
@@ -132,13 +150,13 @@
       font-family: Philosopher, Georgia, serif;
       font-weight: bold;
       font-size: 25px;
-      bottom: 57px;
+      bottom: -13px;
       right: -130px;
     }
   }
 
   .decoration__symbol:nth-child(7) {
-    top: 664px;
+    top: 731px;
     left: 1179px;
     &::before {
       position: absolute;
@@ -146,7 +164,7 @@
       font-family: Philosopher, Georgia, serif;
       font-weight: bold;
       font-size: 25px;
-      bottom: 51px;
+      bottom: -19px;
       right: 65px;
     }
     &::after {
@@ -155,13 +173,13 @@
       font-family: Philosopher, Georgia, serif;
       font-weight: bold;
       font-size: 25px;
-      bottom: 85px;
+      bottom: 15px;
       right: 277px;
     }
   }
 
    .decoration__symbol:nth-child(8) {
-    top: 683px;
+    top: 751px;
     left: 945px;
     &::before {
       position: absolute;
@@ -170,7 +188,7 @@
       font-family: Philosopher, Georgia, serif;
       font-weight: bold;
       font-size: 25px;
-      bottom: 96px;
+      bottom: 28px;
       right: -60px;
     }
   }
