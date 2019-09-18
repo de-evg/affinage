@@ -1,8 +1,6 @@
 .second-slider {
   width: 100%;
   position: relative;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
 }
 
@@ -18,7 +16,7 @@
   display: flex;
   overflow: hidden;
   width: $smallDeviceWidth;
-  height: 318px;
+  min-height: 318px;
   background-color: $pageBgc;
   opacity: 0.4;
 }
@@ -45,7 +43,7 @@
 .second-slider__img--animation {
   transition-property: left;
   transition-duration: 0.5s;
-  transition-timing-function: easy-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 .second-slider__control {
@@ -103,6 +101,54 @@
   }
 }
 
+@media (min-width: $mediumDeviceWidth) {
+  .second-slider {
+    width: 100%;
+  }
+
+  .second-slider__container {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 600px;
+    min-height: 400px;
+    background-color: $pageBgc;
+    opacity: 0.4;
+    border-radius: 5px;
+  }
+
+  .second-slider__img {
+    position: absolute;
+    width: 600px;
+    max-width: 600px;
+    height: 400px;
+  }
+
+  .second-slider__img--current {
+    left: 0
+  }
+
+  .second-slider__img--right {
+    left: 600px;
+  }
+
+  .second-slider__img--left {
+    left: -600px;
+  }
+
+  .second-slider__control {
+    box-sizing: border-box;
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: $largeDeviceWidth) {
   .second-slider {
     top: 184px;
@@ -115,7 +161,7 @@
   .second-slider__title {
     position: absolute;
     display: block;
-    width: 47px;
+    width: 49px;
     margin: 0;
     font-family: "Geometria", "Arial", sans-serif;
     font-weight: 400;
@@ -123,13 +169,13 @@
     line-height: 21px;
     color: rgba(255, 255, 255, 1);
     top: 61px;
-    left: 114px;
+    left: 112px;
     z-index: 2;
     &::before {
       position: absolute;
       content: "";
-      width: 100px;
-      height: 100px;
+      width: 98px;
+      height: 98px;
       border: 1px solid #000000;
       border-radius: 50%;
       top: -30px;
@@ -160,8 +206,19 @@
     width: 860px;
     max-width: 860px;
     height: 490px;
-    left: 0;
     opacity: 0.5;
+  }
+
+  .second-slider__img--current {
+    left: 0;
+  }
+
+  .second-slider__img--right {
+    left: 860px;
+  }
+
+  .second-slider__img--left {
+    left: -860px;
   }
 
   .second-slider__number {
@@ -206,9 +263,11 @@
 
   .second-slider__control {
     top: 318px;
+    left: auto;
     right: 137px;
     width: 257px;
     z-index: 1;
+    transform: translateY(-50%);
   }
 
   .second-slider__svg-decoraion {

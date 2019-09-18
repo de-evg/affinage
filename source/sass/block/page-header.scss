@@ -41,6 +41,17 @@
   margin-top: 4px;
 }
 
+@media (min-width: $mediumDeviceWidth) {
+  .page-header {
+    width: $mediumDeviceWidth;
+  }
+
+.page-header__container {
+    &::after {
+      display: none;
+    }
+  }
+}
 
 @media (min-width: $largeDeviceWidth) {
   .page-header {

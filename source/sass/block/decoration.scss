@@ -51,6 +51,12 @@
   right: 27px;
 }
 
+@media (min-width: $mediumDeviceWidth) {
+  .decoration__symbol:nth-child(4) {
+    bottom: 127px;
+    height: 109px;
+  }
+}
 @media (min-width: $largeDeviceWidth) {
   .decoration__symbol svg {
     height: 30px;

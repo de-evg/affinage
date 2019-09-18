@@ -94,6 +94,5 @@ var onBtnClick = function (evt) {
   }
 };
 
-sliderRigthBtn.addEventListener('click', onBtnClick);
-sliderLeftBtn.addEventListener('click', onBtnClick);
-
+var sliderControl = secondSlider.querySelector('.second-slider__control');
+sliderControl.addEventListener('click', onBtnClick);

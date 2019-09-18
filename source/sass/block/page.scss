@@ -22,37 +22,71 @@
   display: none;
 }
 
-@media (min-width: $largeDeviceWidth) {
-.page__wrapper {
-    width: $largeDeviceWidth;
-    min-height: 800px;
-    z-index: -1;
-    &::before {
-      position: absolute;
-      content: "";
-      width: 600px;
-      height: 616px;
-      bottom: 0;
-      left: 100px;
-      background: linear-gradient(to right, #ffffff 0%, transparent 100%);
-      opacity: 0.6;
-      box-shadow: 0 0 99px rgba(0, 0, 0, 0.1);
-      z-index: -2;
+@media (min-width: $mediumDeviceWidth) {
+  .page__wrapper {
+      width: $mediumDeviceWidth;
+      display: flex;
+      flex-direction: column;
     }
-    &::after {
-      position: absolute;
-      content: "";
-      width: 50%;
-      height: 100%;
-      bottom: 0;
-      right: 0;
-      background: #ffffff;
-      box-shadow: 0 0 99px rgba(0, 0, 0, 0.1);
-      z-index: -2;
-    }
-  }
 
   .page__title {
+    padding-top: 50px;
+    display: block;
+    background-color: $pageBgc;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .page__logo {
+    margin: 0;
+
+    font-style: normal;
+    font-family: "Philosopher", "Georgia", serif;
+    font-size: 140px;
+    font-weight: 400;
+    letter-spacing: 50px;
+    color: #ffffff;
+
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $largeDeviceWidth) {
+  .page__wrapper {
+      width: $largeDeviceWidth;
+      min-height: 800px;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 600px;
+        height: 616px;
+        bottom: 0;
+        left: 100px;
+        background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+        opacity: 0.6;
+        box-shadow: 0 0 99px rgba(0, 0, 0, 0.2);
+        z-index: -2;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        background: #ffffff;
+        box-shadow: 0 0 99px rgba(0, 0, 0, 0.2);
+        z-index: -2;
+      }
+    }
+
+  .page__title {
+    padding-top: 0;
+    font-weight: 300;
+    text-transform: lowercase;
+
+    background-color: transparent;
     display: block;
     position: absolute;
     transform: rotate(-90deg);

@@ -3,7 +3,7 @@
   flex-direction: column;
   width: $smallDeviceWidth;
   margin: 0 auto;
-  overflow-x: hidden;
+
 }
 
 .page-main__slogan {
@@ -11,6 +11,12 @@
   left: -19px;
   top: 43%;
   transform: translateY(-50%) rotate(-90deg);
+}
+
+@media (min-width: $mediumDeviceWidth) {
+  .page-main {
+    width: $mediumDeviceWidth;
+  }
 }
 
 @media (min-width: $largeDeviceWidth) {
