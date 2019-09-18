@@ -90,9 +90,11 @@ var onBtnClick = function (evt) {
   switch (btnId) {
     case 'rightBtn':
       var srcForFirstSlider = secondSliderCurrentImg.src;
-      changeCurrentSlide(secondSliderRightImg, typeSlider[1]);
-      changeRightSlide(secondSliderLeftImg, btnId, typeSlider[1]);
-      changeLeftSlide(secondSliderCurrentImg, btnId, typeSlider[1]);
+      setTimeout(function () {
+        changeCurrentSlide(secondSliderRightImg, typeSlider[1]);
+        changeRightSlide(secondSliderLeftImg, btnId, typeSlider[1]);
+        changeLeftSlide(secondSliderCurrentImg, btnId, typeSlider[1]);
+      }, 100)
 
       setTimeout(function () {
         changeCurrentSlide(firstSliderRightImg, typeSlider[0], srcForFirstSlider);
@@ -103,9 +105,11 @@ var onBtnClick = function (evt) {
       break;
     case 'leftBtn':
       srcForFirstSlider = secondSliderCurrentImg.src;
-      changeCurrentSlide(secondSliderLeftImg, typeSlider[1]);
-      changeRightSlide(secondSliderCurrentImg, btnId, typeSlider[1]);
-      changeLeftSlide(secondSliderRightImg, btnId, typeSlider[1]);
+      setTimeout(function () {
+        changeCurrentSlide(secondSliderLeftImg, typeSlider[1]);
+        changeRightSlide(secondSliderCurrentImg, btnId, typeSlider[1]);
+        changeLeftSlide(secondSliderRightImg, btnId, typeSlider[1]);
+      }, 100)
 
       setTimeout(function () {
         changeCurrentSlide(firstSliderLeftImg, typeSlider[0], srcForFirstSlider);
