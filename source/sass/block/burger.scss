@@ -1,26 +1,39 @@
 .burger {
+  position: relative;
   width: 20px;
-  height: 14px;
-  background-color: transparent;
+  height: 2px;
+  background-color: #000000;
   border: none;
-  background: linear-gradient(to bottom, #000000 0%, #000000 2px,
-    transparent 2px, transparent 6px, #000000 6px, #000000 8px,
-    transparent 8px, transparent 12px, #000000 12px, #000000 100%);
-}
-
-@media (min-width: $largeDeviceWidth) {
-  .burger {
-    position: relative;
     &::before {
       position: absolute;
       content: "";
-      width: 54px;
-      height: 54px;
-      background-image: url("../img/wreath-gray.png");
-      background-repeat: no-repeat;
-      top: -20px;
-      left: 50%;
-      transform: translateX(-50%);
+      width: 20px;
+      height: 2px;
+      top: 6px;
+      left: 0;
+      background-color: #000000;
     }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 2px;
+      top: 12px;
+      left: 0;
+      background-color: #000000;
+    }
+}
+
+@media (min-width: $largeDeviceWidth) {
+  .burger span {
+    position: absolute;
+    content: "";
+    width: 54px;
+    height: 54px;
+    background-image: url("../img/wreath-gray.png");
+    background-repeat: no-repeat;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

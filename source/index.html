@@ -33,12 +33,15 @@
   <link href="fonts/Philosopher/Philosopher-Bold.ttf" rel="preload" as="font">
   <link href="fonts/Philosopher/Philosopher-Italic.ttf" rel="preload" as="font">
   <link href="fonts/Philosopher/Philosopher-Bold.ttf" rel="preload" as="font">
-	<meta type="description" content="Afiinage test task">
+	<meta name="description" content="Afiinage test task">
 	<link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.min.css">
 </head>
 <body class="page">
   <div class="page__wrapper">
+    <svg class="page__svg-decoraion page__svg-decoraion--mobile-hidden" xmlns="http://www.w3.org/2000/svg" width="177" height="282" viewBox="0 0 177 282">
+      <path d="M0 0 L0 282 L138 282 L177 0 Z" stroke-width="1" stroke="#000000" fill="none"/>
+    </svg>
     <h1 class="page__title page__title--mobile-hidden reset-margin">тестовое задание</h1>
     <p class="page__logo page__logo--mobile-hidden">Affinage</p>
     <header class="page__header page-header">
@@ -46,7 +49,7 @@
         <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="22.802" height="23.213" viewBox="0 0 22.802 23.213">
           <path d="M286.95-832.57l4.314,10.066H282.43l4.519-10.066ZM300.3-815.109c-.411,0-.822-.205-1.233-.205a4.491,4.491,0,0,1-1.027-.616,4.3,4.3,0,0,1-.822-1.232,11.463,11.463,0,0,1-1.027-1.643l-7.6-18.694h-1.027L277.5-814.287h1.438l2.876-6.779h10.271l.822,2.26a7.105,7.105,0,0,0,1.438,2.465,5.538,5.538,0,0,0,1.643,1.438,14.141,14.141,0,0,0,1.643.616h2.67v-.822" transform="translate(-277.5 837.5)" fill="#131212" fill-rule="evenodd"/>
         </svg>
-        <button class="page-header__burger burger"></button>
+        <button class="page-header__burger burger"><span></span></button>
       </div>
       <div class="first-slider">
         <p class="first-slider__number first-slider__number--mobile-hidden">51
@@ -60,9 +63,6 @@
     </header>
     <main class="page__main page-main">
       <p class="page-main__slogan slogan reset-margin">очень хороший слоган</p>
-      <svg class="second-slider__svg-decoraion second-slider__svg-decoraion--modile-hidden" xmlns="http://www.w3.org/2000/svg" width="177" height="282" viewBox="0 0 177 282">
-        <path d="M0 0 L0 282 L138 282 L177 0 Z" stroke-width="1" stroke="#000000" fill="none"/>
-      </svg>
       <div class="second-slider">
         <h2 class="second-slider__title second-slider__title--mobile-hidden">URAL 03</h2>
         <div class="second-slider__container">
@@ -74,9 +74,9 @@
           <button class="second-slider__left-button" id="leftBtn"></button>
           <button class="second-slider__right-button" id="rightBtn"></button>
         </div>
-        <p class="second-slider__number reset-margin">13<span class="second-slider__number--mobile-hidden">7</span></p>
+        <p class="second-slider__number second-slider__number--mobile-hidden reset-margin">13<span class="">7</span></p>
       </div>
-        <div class="page-main__decoration-container">
+        <div class="page-main__decoration-container decoration">
         <span class="decoration__symbol">
         </span>
         <span class="decoration__symbol">

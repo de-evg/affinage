@@ -6,6 +6,10 @@
   overflow-y: hidden;
 }
 
+.page__svg-decoraion--mobile-hidden {
+  display: none;
+}
+
 .page__title {
   font-family: "Geometria", "Arial", sans-serif;
   font-size: 12px;
@@ -80,6 +84,18 @@
         z-index: -2;
       }
     }
+
+
+  .page__svg-decoraion {
+    position: absolute;
+    display: block;
+    top: 266px;
+    left: 328px;
+    width: 177px;
+    height: 282px;
+    z-index: 2;
+    transform: rotate(0);
+  }
 
   .page__title {
     padding-top: 0;

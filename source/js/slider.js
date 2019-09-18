@@ -8,7 +8,6 @@ var sliderRigthBtn = secondSlider.querySelector('.second-slider__right-button');
 var sliderLeftBtn = secondSlider.querySelector('.second-slider__left-button');
 var typeSlider = ['first-slider', 'second-slider'];
 
-
 var onBtnClick = function (evt) {
   evt.preventDefault();
   var btnId = evt.target.id;
