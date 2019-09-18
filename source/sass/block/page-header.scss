@@ -2,7 +2,6 @@
   margin: 0 auto;
   width: $smallDeviceWidth;
   position: relative;
-
 }
 
 .page-header__decoration {
@@ -24,7 +23,7 @@
 
   display: flex;
   justify-content: space-between;
-    &::after {
+  &::after {
     position: absolute;
     content: "";
     width: 152px;
@@ -64,7 +63,7 @@
     padding-top: 34px;
     padding-left: 14px;
     padding-right: 14px;
-      &::after {
+    &::after {
         display: none;
     }
   }

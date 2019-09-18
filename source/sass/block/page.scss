@@ -58,32 +58,32 @@
 
 @media (min-width: $largeDeviceWidth) {
   .page__wrapper {
-      width: $largeDeviceWidth;
-      min-height: 800px;
-      &::before {
-        position: absolute;
-        content: "";
-        width: 600px;
-        height: 616px;
-        bottom: 0;
-        left: 100px;
-        background: linear-gradient(to right, #ffffff 0%, transparent 100%);
-        opacity: 0.6;
-        box-shadow: 0 0 99px rgba(0, 0, 0, 0.2);
-        z-index: -2;
-      }
-      &::after {
-        position: absolute;
-        content: "";
-        width: 50%;
-        height: 100%;
-        bottom: 0;
-        right: 0;
-        background: #ffffff;
-        box-shadow: 0 0 99px rgba(0, 0, 0, 0.2);
-        z-index: -2;
-      }
+    width: $largeDeviceWidth;
+    min-height: 800px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 600px;
+      height: 616px;
+      bottom: 0;
+      left: 100px;
+      background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+      opacity: 0.6;
+      box-shadow: 0 0 99px rgba(0, 0, 0, 0.2);
+      z-index: -2;
     }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+      background: #ffffff;
+      box-shadow: 0 0 99px rgba(0, 0, 0, 0.2);
+      z-index: -2;
+    }
+  }
 
 
   .page__svg-decoraion {

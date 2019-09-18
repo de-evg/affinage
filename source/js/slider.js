@@ -20,6 +20,14 @@ var onBtnClick = function (evt) {
   var secondSliderRightImg = secondSlider.querySelector('.second-slider__img--right');
   var secondSliderLeftImg =secondSlider.querySelector('.second-slider__img--left');
 
+
+  /**
+   * Устанавливает новый текущий слайд.
+   *
+   * @param {Object} newCurrentSlide - элемент, который станет текущим слайдом
+   * @param {string} typeSlider - изменяемый слайдер.
+   * @param {string} src - путь изображения, которое должно появиться в первом слайдере
+   */
   var changeCurrentSlide = function (newCurrentSlide, typeSlider, src) {
       if (newCurrentSlide.classList.contains(typeSlider +'__img--left')) {
         newCurrentSlide.classList.remove(typeSlider +'__img--left');
@@ -33,6 +41,13 @@ var onBtnClick = function (evt) {
       newCurrentSlide.classList.add(typeSlider +'__img--current', typeSlider +'__img--animation');
   };
 
+  /**
+   * Устанавливает новый слайд справа от текущего.
+   *
+   * @param {Object} newRightSlide - элемент, который станет слайдом справа
+   * @param {string} btnId - id нажатой кнопки
+   * @param {string} typeSlider - изменяемый слайдер.
+   */
   var changeRightSlide = function (newRightSlide, btnId, typeSlider) {
       switch (btnId) {
         case 'rightBtn':
@@ -49,6 +64,13 @@ var onBtnClick = function (evt) {
       };
   };
 
+  /**
+   * Устанавливает новый слайд слева от текущего.
+   *
+   * @param {Object} newLeftSlide - элемент, который станет слайдом справа
+   * @param {string} btnId - id нажатой кнопки
+   * @param {string} typeSlider - изменяемый слайдер.
+   */
   var changeLeftSlide = function (newLeftSlide, btnId, typeSlider) {
       switch (btnId) {
         case 'rightBtn':

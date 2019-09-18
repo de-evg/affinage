@@ -57,6 +57,7 @@
     height: 109px;
   }
 }
+
 @media (min-width: $largeDeviceWidth) {
   .decoration__symbol svg {
     height: 30px;
@@ -138,7 +139,7 @@
     }
   }
 
-   .decoration__symbol:nth-child(6) {
+  .decoration__symbol:nth-child(6) {
     top: 689px;
     right: 1204px;
     &::before {
@@ -184,7 +185,7 @@
     }
   }
 
-   .decoration__symbol:nth-child(8) {
+  .decoration__symbol:nth-child(8) {
     top: 751px;
     left: 945px;
     &::before {
